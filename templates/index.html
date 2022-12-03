@@ -1,0 +1,24 @@
+{% load static %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="button11"><!-- HTML !-->
+      <a href="{% url 'register' %}">
+          <button class="button-19" role="button">Подать заявку</button>
+
+      </a>
+  </div>
+
+    <div class="bg1"></div>
+
+</body>
+</html>
+
+{% endblock %}

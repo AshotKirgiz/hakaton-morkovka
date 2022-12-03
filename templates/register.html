@@ -1,0 +1,13 @@
+{% block content %}
+
+<h1>{{title}}</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <a href="{% url 'login' %}"><button type="submit">Регистрация</button></a>
+</form>
+
+{% endblock %}
+
+<a href="{% url 'account' %}">Главная</a>

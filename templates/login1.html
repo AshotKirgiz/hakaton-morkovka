@@ -1,0 +1,29 @@
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+
+<form class="box" method="post">
+    <h1>LOGIN</h1>
+    {% csrf_token %}
+    <input type="text" name="username" id="username" placeholder="Username">
+    <input type="password" name="password" id="password" placeholder="Password">
+    {{ form.errors }}
+    <input type="submit" name="" value="Login">
+</form>
+
+<div class="background1"></div>
+
+</body>
+</html>
+
+{% endblock %}
