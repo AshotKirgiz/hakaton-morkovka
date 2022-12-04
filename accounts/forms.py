@@ -2,7 +2,7 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserChangeForm
-from .models import CustomUser
+from .models import CustomUser, CustomScore
 
 class LoginUserForm(AuthenticationForm):
     username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-input'}))
@@ -18,7 +18,7 @@ class RegisterUserForm(UserCreationForm):
     job = forms.CharField(label='Местоработы и доллжность', widget=forms.TextInput(attrs={'class': 'form-input'}))
     theme = forms.CharField(label='Тема и аннотация', widget=forms.TextInput(attrs={'class': 'form-input'}))
     media = forms.CharField(label='Ссылка на материал', widget=forms.TextInput(attrs={'class': 'form-input'}))
-    scores = forms.DecimalField(label='Баллы', widget=forms.TextInput(attrs={'class': 'form-input'}))
+
 
     class Meta:
         model = CustomUser

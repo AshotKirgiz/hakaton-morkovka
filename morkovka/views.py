@@ -5,4 +5,4 @@ def home(request):
     return render(request, "index.html")
 
 def end(request):
-    return render(request, "end.html")
+    return render(request, "finish.html")

@@ -137,7 +137,7 @@ MEDIA_URL = '/media/'
 
 STATIC_URL = 'home/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'morkovka/home/static'),]
+STATICFILES_DIRS = ['morkovka/home/static', 'morkovka/end/static']
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
