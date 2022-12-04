@@ -1,8 +1,25 @@
-<h3>Работа</h3>
+{% load static %}
 
-
-Фио: {{ user.fio }}
-Место работы и должность: {{ user.job }}
-Тема и аннотация: {{ user.theme }}
-
-<a href="{% url 'bidsmk' %}">Оценить работу</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detailes</title>
+    <link rel="stylesheet" href="{% static 'css/detailes.css' %}">
+</head>
+<body>
+    {% csrf_token %}
+   <div class="bg10"></div>
+    
+    <form class="box"  action="zayavka.html" method="post">
+    <h1>Детали заявки</h1>
+    <input type="text1" name="" placeholder="Автор">
+    <input type="text1" name="" placeholder="Должность и место работы">
+    <input type="text1" name="" placeholder="Тема">
+    <input type="text1" name="" placeholder="Аннотация">
+    <input type="submit1" name="" value="Ссылка на работу">
+    <input type="submit2" name="" value="Оценить работу">
+    </form>
+    
+</body>
+</html>

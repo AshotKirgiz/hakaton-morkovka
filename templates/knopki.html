@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>knopki</title>
+<link rel="stylesheet" href="{% static 'css/knopki.css' %}">
+</head>
+<body>
+    <div class="bg10"></div>
+
+
+
+
+
+
+    <div class ="button"><!-- HTML !--> 
+        <a href="{% url 'print' %}">
+          <button class="button-1" role="button">Печатные издания</button>
+        </a>
+</div>
+
+<div class ="button2"><!-- HTML !--> 
+    <a href="{% url 'info' %}">
+          <button class="button-2" role="button">Видео материалы</button>
+      </a>
+</div>
+
+</body>
+</html>

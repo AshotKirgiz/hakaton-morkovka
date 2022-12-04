@@ -22,10 +22,10 @@ def themes(request):
     return render(request, "scroll.html")
 
 def bids_detail(request):
-    return render(request, "ozenka.html")
+    return render(request, "bids-details.html")
 
 def bids_mark(request):
-    return render(request, "bids-mark.html")
+    return render(request, "knopki.html")
 
 def printed_editions(request):
     return render(request, "kriterii.html")

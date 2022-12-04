@@ -22,7 +22,7 @@ overflow-y: scroll; /* прокрутка по вертикали */
 
   <body>
   <div class="bg7">
-
+  {% csrf_token %}
   </div>
 
     <form class="box"  action="{% url 'bidsdv' %}" method="post">
