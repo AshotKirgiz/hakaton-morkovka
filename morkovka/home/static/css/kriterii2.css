@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+@media (max-width: 480px){
+    #footer { 
+        display : none; 
+        visibility : hidden; 
+    }
+}
+.bg5{
+    background: url(../img/bglk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.text{
+margin: 800%;
+}
+
+.text1{
+    position: absolute;
+    font-size: 30px;
+    top: 5%;
+    left: 3%;
+    right: 10%;
+    margin: 4%;
+}
+
+.text2{
+    position: absolute;
+    font-size: 30px;
+    top: 20%;
+    left: 3%;
+    right: 10%;
+    margin: 4%;
+}
+.text3{
+    position: absolute;
+    font-size: 30px;
+    top: 35%;
+    left: 3%;
+    right: 10%;
+    margin: 4%;
+}
+.text4{
+    position: absolute;
+    font-size: 30px;
+    top: 43%;
+    left: 3%;
+    right: 10%;
+    margin: 4%;
+}
+.text5{
+    position: absolute;
+    font-size: 30px;
+    top: 59%;
+    left: 3%;
+    right: 10%;
+    margin: 4%;
+}
+
+.box{
+    top: 0;
+    width: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    background: none;
+    text-align: center;
+    border-radius: 50px;
+    
+}
+.box input[type ="text1"], .box input[type="password1"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 140px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px 10px;
+    width: 50px;
+    outline: none;
+    color: black;
+    border-radius: 24px;
+    transition: 0.25s;
+    background-color:#FFFFFF;
+     
+}
+
+.button{
+    position: absolute; 
+    top:  87%; 
+    left: 55%;
+}
+
+.button-19 {
+  appearance: button;
+  background-color:  #D18585;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 20px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color:  #D18585;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-19:disabled {
+  cursor: auto;

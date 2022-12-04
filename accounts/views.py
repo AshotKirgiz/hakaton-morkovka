@@ -15,7 +15,8 @@ def me_user(request):
 def me_admin(request):
     return render(request, "lkadmin.html")
 
-
+def lower_criteria(request):
+    return render(request, "lower-criteria.html")
 
 def themes(request):
     return render(request, "themes.html")
@@ -27,10 +28,10 @@ def bids_mark(request):
     return render(request, "bids-mark.html")
 
 def printed_editions(request):
-    return render(request, "bids-print.html")
+    return render(request, "kriterii.html")
 
 def information_publications(request):
-    return render(request, "bids-info.html")
+    return render(request, "kriterii2.html")
 
 
 class RegisterUser(DataMixin, CreateView):
