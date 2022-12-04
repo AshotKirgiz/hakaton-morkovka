@@ -17,6 +17,7 @@ urlpatterns = [
     path('bids/bids-mark', views.bids_mark, name="bidsmk"),
     path('bids/bids-mark/printed-editions', views.printed_editions, name="print"),
     path('bids/bids-mark/lower-criteria', views.lower_criteria, name="lower"),
-    path('bids/bids-mark/information_publications', views.information_publications, name="info")
+    path('bids/bids-mark/information_publications', views.information_publications, name="info"),
+    path('end/', views.end, name = "end")
 ]
 

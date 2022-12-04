@@ -33,6 +33,8 @@ def printed_editions(request):
 def information_publications(request):
     return render(request, "kriterii2.html")
 
+def end(request):
+    return render(request, "finish.html")
 
 class RegisterUser(DataMixin, CreateView):
     form_class = RegisterUserForm

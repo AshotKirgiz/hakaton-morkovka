@@ -45,12 +45,18 @@
     font-size: 40px;
 }
 .cat{
+
+    width: 150%;
+    height: 150%;
+    background: url(../img/cat1.png);
+    background-size: 525px 795px;
+    background-size: 525px 795px;
     position: absolute;
     top: 20%;
     left: 70%;
     float: right;
     width: 525px;
-    height: 575px
+    height: 795px
 }
 #confettis {
   overflow: hidden;
