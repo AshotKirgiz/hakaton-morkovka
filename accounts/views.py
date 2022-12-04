@@ -16,7 +16,7 @@ def me_admin(request):
     return render(request, "lkadmin.html")
 
 def lower_criteria(request):
-    return render(request, "lower-criteria.html")
+    return render(request, "kriterii3.html")
 
 def themes(request):
     return render(request, "themes.html")

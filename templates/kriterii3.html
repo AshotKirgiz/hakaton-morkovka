@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kriterii2</title>
+    <link rel="stylesheet" href="{% static 'css/kriterii3.css' %}">
+</head>
+<body>
+    <div class="bg5"></div>
+    
+    <div class ="text1">
+    <h1>1.Рекламные материалы, в том числе материалы со скрытой
+рекламой (макс. - 5б)
+</h1>
+    </div>
+    <div class ="text2">
+    <h1>2. Журналистские штампы (газетные клише) (макс. - 5б)
+</h1>
+    </div>
+    
+    <div class ="text3">
+    <h1>3. Материалы, носящие явно заказной характер 
+(макс. -8б)
+</h1>
+   </div>
+       
+      <div class ="text4">
+    <h1>4. Материалы, содержащие грубые и многочисленные грамматические ошибки
+(макс. -12б)
+</h1>
+ </div>
+      
+       <div class ="text5">
+    <h1>5. Нарушения орфоэпических, лексических норм русского языка (макс. -10б)</h1>
+ </div>
+ 
+ 
+ <div class="footer">
+ <form class="box"  action="zayavka.html" method="post">
+    <input type="text1" name="" placeholder="">
+    <input type="text1" name="" placeholder="">
+    <input type="text1" name="" placeholder="">
+    <input type="text1" name="" placeholder="">
+    <input type="text1" name="" placeholder="">
+
+    </form>
+    <div class ="button">
+    <a href="{% url 'themes' %}">
+          <button class="button-19" role="button">Сохранить</button>
+      </a>
+
+
+</div>
+
+ </div>
+</body>
+</html>
