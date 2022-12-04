@@ -6,13 +6,16 @@ from django.urls import reverse_lazy
 from django.views.generic import CreateView
 from .forms import LoginUserForm, RegisterUserForm
 from .utils import DataMixin
-
+from .models import CustomUser
 
 def me_user(request):
-    return render(request, "lk.html")
+    users = CustomUser.objects.all()
+    return render(request, 'lk.html', context={'users': users})
 
 def me_admin(request):
     return render(request, "lkadmin.html")
+
+
 
 def themes(request):
     return render(request, "themes.html")

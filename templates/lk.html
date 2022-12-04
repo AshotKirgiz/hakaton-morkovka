@@ -13,15 +13,19 @@
     <div class="bg3"></div>
     <form class="box"  action="zayavka.html" method="post">
     <h1>Данные пользователя</h1>
-    <input type="text1" name="" placeholder="ФИО">
-    <input type="Password1" name="" placeholder="О себе">
-    <input type="Password1" name="" placeholder="О работе">
-    <input type="submit1" name="" value="Ссылка на работу">
-    
-    
-    <input type="submit2" name="" value="На главную">
-   
 
+
+    <input type="text1" name="" placeholder="Фио: {{ user.fio }}">
+    <input type="text1" name="" placeholder="Тема работы: {{ user.theme }}">
+    <input type="text1" name="" value="Ваши баллы">
+
+    <a href="{% url 'end' %}">
+        <input type="submit1" name="" value="Результаты конкурса">
+    </a>
+
+    <a href="{% url 'home' %}">
+        <input type="submit2" name="" value="На главную">
+    </a>
 
 </form>
         <div class = "text">
