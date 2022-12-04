@@ -17,8 +17,9 @@
     {% csrf_token %}
     <input type="text" name="username" id="username" placeholder="Username">
     <input type="password" name="password" id="password" placeholder="Password">
-    {{ form.errors }}
-    <input type="submit" name="" value="Login">
+     <a href="{% url 'account_user' %}">
+        <input type="submit" name="" value="Login">
+    </a>
 </form>
 
 <div class="background1"></div>

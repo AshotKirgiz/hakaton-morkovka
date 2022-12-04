@@ -7,12 +7,11 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('account/', views.me, name="account"),
-    path('account-admin/', views.me_admin, name="account"),
+    path('account/user', views.me_user, name="account_user"),
+    path('account/admin', views.me_admin, name="account_admin"),
     path('login/', LoginUser.as_view(), name="login"),
     path('logout/', logout_user.as_view(), name="logout"),
     path('register/', RegisterUser.as_view(), name="register"),
-    path('login/login', views.redirect_login, name="redirect_login"),
     path('bids/', views.themes, name="themes"),
     path('bids/bids-detail', views.bids_detail, name="bidsdv"),
     path('bids/bids-mark', views.bids_mark, name="bidsmk"),

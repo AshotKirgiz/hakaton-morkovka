@@ -8,14 +8,11 @@ from .forms import LoginUserForm, RegisterUserForm
 from .utils import DataMixin
 
 
-def me(request):
+def me_user(request):
     return render(request, "lk.html")
 
 def me_admin(request):
     return render(request, "lkadmin.html")
-
-def redirect_login(request):
-    return render(request, "loginlogin.html")
 
 def themes(request):
     return render(request, "themes.html")
@@ -54,7 +51,7 @@ class LoginUser(DataMixin, LoginView):
         return dict(list(context.items()) + list(c_def.items()))
 
     def get_success_url(self):
-        return reverse_lazy('account')
+        return reverse_lazy('account_user')
 
 class logout_user(LogoutView):
     def logout_user(self, request):
