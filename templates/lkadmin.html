@@ -2,6 +2,7 @@
 
 {% block content %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,17 +11,20 @@
     <link rel="stylesheet" href="{% static 'css/style2.css' %}">
 </head>
 <body>
+
+{% csrf_token %}
+
     <div class="bg3"></div>
-    <form class="box"  action="lk admin.html" method="post">
+    <form class="box"   method="post">
     <h1>Эксперт</h1>
-    <input type="text1" name="" placeholder="ФИО">
-    <input type="Password1" name="" placeholder="О себе">
-    
+    <input type="text1" name="" placeholder="ФИО: {{ user.fio }}">
+
+
+
+
     <a href="{% url 'themes' %}">
         <input type="submit1" name="" value="Приступить к работе">
     </a>
-
-
 
 </form>
         <div class = "text">

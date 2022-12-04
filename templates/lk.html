@@ -14,6 +14,7 @@
     <form class="box"  action="zayavka.html" method="post">
     <h1>Данные пользователя</h1>
 
+    {% csrf_token %}
 
     <input type="text1" name="" placeholder="Фио: {{ user.fio }}">
     <input type="text1" name="" placeholder="Тема работы: {{ user.theme }}">

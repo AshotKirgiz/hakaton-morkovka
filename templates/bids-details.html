@@ -8,17 +8,24 @@
     <link rel="stylesheet" href="{% static 'css/detailes.css' %}">
 </head>
 <body>
-    {% csrf_token %}
+
    <div class="bg10"></div>
     
-    <form class="box"  action="zayavka.html" method="post">
+    <form class="box" method="post">
     <h1>Детали заявки</h1>
-    <input type="text1" name="" placeholder="Автор">
-    <input type="text1" name="" placeholder="Должность и место работы">
-    <input type="text1" name="" placeholder="Тема">
-    <input type="text1" name="" placeholder="Аннотация">
-    <input type="submit1" name="" value="Ссылка на работу">
-    <input type="submit2" name="" value="Оценить работу">
+    <input type="text1" name="" placeholder="Автор {{ user.fio }}">
+    <input type="text1" name="" placeholder="Должность и место работы {{ user.job }}">
+    <input type="text1" name="" placeholder="Тема {{ user.theme }}">
+
+
+        <a href="{{ user.media }}">
+          <input type="submit1" name="" value="Ссылка на работу">
+        </a>
+
+
+        <a href="{% url 'print' %}">
+          <input type="submit2" name="" value="Оценить работу">
+        </a>
     </form>
     
 </body>
