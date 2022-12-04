@@ -11,16 +11,18 @@ class LoginUserForm(AuthenticationForm):
 
 class RegisterUserForm(UserCreationForm):
 
-    full_name = forms.CharField(label='ФИО', widget=forms.TextInput(attrs={'class': 'form-input'}))
-    job = forms.CharField(label='Местоработы и доллжность', widget=forms.TextInput(attrs={'class': 'form-input'}))
-    theme = forms.CharField(label='Тема и аннотация', widget=forms.TextInput(attrs={'class': 'form-input'}))
     username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class': 'form-input'}))
     password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
+    password2 = forms.CharField(label='Повторите пароль', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
+    fio = forms.CharField(label='ФИО', widget=forms.TextInput(attrs={'class': 'form-input'}))
+    job = forms.CharField(label='Местоработы и доллжность', widget=forms.TextInput(attrs={'class': 'form-input'}))
+    theme = forms.CharField(label='Тема и аннотация', widget=forms.TextInput(attrs={'class': 'form-input'}))
+    media = forms.CharField(label='Ссылка на материал', widget=forms.TextInput(attrs={'class': 'form-input'}))
 
     class Meta:
-        model = User
+        model = CustomUser
         fields = (
-            'full_name', 'job', 'theme', 'username', 'password1'
+            'username', 'password1', 'password2', 'fio', 'job', 'theme', 'media'
         )
 
 

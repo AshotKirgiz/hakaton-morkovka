@@ -35,7 +35,7 @@ def information_publications(request):
 
 class RegisterUser(DataMixin, CreateView):
     form_class = RegisterUserForm
-    template_name = 'zayavka.html'
+    template_name = 'zayavka1.html'
     success_url = reverse_lazy('login')
 
     def get_context_data(self, *, object_list=None, **kwargs):

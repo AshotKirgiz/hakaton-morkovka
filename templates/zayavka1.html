@@ -1,0 +1,33 @@
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+
+<form class="box" method="post">
+    <h1>Подача заявки</h1>
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    {{ form.errors }}
+    <a href="{% url 'home' %}">
+        <input type="submit" name="" value="Принять участие">
+    </a>
+</form>
+
+ <div class="background2">
+
+    </div>
+
+</body>
+</html>
+
+{% endblock %}
