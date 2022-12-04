@@ -1,5 +1,6 @@
 {% load static %}
 
+
 <html>
   <head>
     <title>spisok rabot</title>
@@ -21,25 +22,29 @@ overflow-y: scroll; /* прокрутка по вертикали */
 
   <body>
   <div class="bg7">
-      
+
   </div>
 
-    <form class="box" method="post">
-    <div class="text">       
+    <form class="box"  action="{% url 'bidsdv' %}" method="post">
+    <div class="text">
   <h1>Списки работ</h1>
     </div>
 
-    {% csrf_token %}
-
-  <a href="{% url 'bidsdv' %}">
     <input type="submit" name="" value="Работа">
-  </a>
-
-
-
-    {{ form.errors }}
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
 
     </form>
-     
+
   </body>
 </html>

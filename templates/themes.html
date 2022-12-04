@@ -1,5 +1,50 @@
-<h3>Списки работ</h3>
+{% load static %}
 
-<h1>Вот ваши работы</h1>
 
-<a href="{% url 'bidsdv' %}">Работа</a>
+<html>
+  <head>
+    <title>spisok rabot</title>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<link rel="stylesheet" href="{% static 'css/scroll.css' %}">
+
+<style>
+.prokrutka {
+height: cover; /* высота нашего блока */
+width: cover; /* ширина нашего блока */
+background: #fff; /* цвет фона, белый */
+border: 1px solid #C1C1C1; /* размер и цвет границы блока */
+overflow-x: scroll; /* прокрутка по горизонтали */
+overflow-y: scroll; /* прокрутка по вертикали */
+}
+</style>
+
+  </head>
+
+  <body>
+  <div class="bg7">
+
+  </div>
+
+    <form class="box"  action="{% url 'bidsdv' %}" method="post">
+    <div class="text">
+  <h1>Списки работ</h1>
+    </div>
+
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+    <input type="submit" name="" value="Работа">
+
+    </form>
+
+  </body>
+</html>

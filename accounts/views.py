@@ -22,7 +22,7 @@ def themes(request):
     return render(request, "scroll.html")
 
 def bids_detail(request):
-    return render(request, "bids-details.html")
+    return render(request, "ozenka.html")
 
 def bids_mark(request):
     return render(request, "bids-mark.html")
