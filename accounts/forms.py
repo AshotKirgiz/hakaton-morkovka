@@ -18,6 +18,7 @@ class RegisterUserForm(UserCreationForm):
     job = forms.CharField(label='Местоработы и доллжность', widget=forms.TextInput(attrs={'class': 'form-input'}))
     theme = forms.CharField(label='Тема и аннотация', widget=forms.TextInput(attrs={'class': 'form-input'}))
     media = forms.CharField(label='Ссылка на материал', widget=forms.TextInput(attrs={'class': 'form-input'}))
+    scores = forms.DecimalField(label='Баллы', widget=forms.TextInput(attrs={'class': 'form-input'}))
 
     class Meta:
         model = CustomUser

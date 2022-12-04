@@ -19,7 +19,7 @@ def lower_criteria(request):
     return render(request, "kriterii3.html")
 
 def themes(request):
-    return render(request, "themes.html")
+    return render(request, "scroll.html")
 
 def bids_detail(request):
     return render(request, "bids-details.html")

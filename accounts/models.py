@@ -17,3 +17,4 @@ class CustomUser(AbstractUser):
     job = models.TextField('Место работы и должность', blank=True,)
     theme = models.TextField('Тема и аннотациия', blank=True,)
     media = models.TextField('Ссылка на материал', blank=True,)
+    scores = models.DecimalField('Баллы', max_digits=5, decimal_places=2, blank=False, default=0)
